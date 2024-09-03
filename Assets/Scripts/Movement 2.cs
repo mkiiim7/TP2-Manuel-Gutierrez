@@ -5,11 +5,11 @@ using UnityEngine;
 public class Movement2 : MonoBehaviour
 {
     private int score = 10;
-    public KeyCode keyUp = KeyCode.UpArrow;
-    public KeyCode keyDown = KeyCode.DownArrow;
-    public KeyCode keyLeft = KeyCode.LeftArrow;
-    public KeyCode keyRight = KeyCode.RightArrow;
-    public float speed = 0.01f;
+    [SerializeField] private KeyCode keyUp = KeyCode.UpArrow; 
+    [SerializeField] private KeyCode keyDown = KeyCode.DownArrow;
+    [SerializeField] private KeyCode keyLeft = KeyCode.LeftArrow;
+    [SerializeField] private KeyCode keyRight = KeyCode.RightArrow;
+    //public float speed = 0.01f;
     public float speed2 = 0.01f;
 
     void Update()
@@ -18,22 +18,22 @@ public class Movement2 : MonoBehaviour
 
         if (Input.GetKey(keyUp))
         {
-            pos.y += speed;
+            pos.y += speed2 * Time.deltaTime * 1000;
         }
 
         if (Input.GetKey(keyDown))
         {
-            pos.y -= speed;
+            pos.y -= speed2 * Time.deltaTime * 1000;
         }
 
         if (Input.GetKey(keyLeft))
         {
-            pos.x -= speed2;
+            pos.x -= speed2 * Time.deltaTime * 1000;
         }
 
         if (Input.GetKey(keyRight))
         {
-            pos.x += speed2;
+            pos.x += speed2 * Time.deltaTime * 1000;
         }
 
         transform.position = pos;

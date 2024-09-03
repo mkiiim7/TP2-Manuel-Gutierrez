@@ -1,45 +1,59 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     private int score = 10;
     private float life = 100;
-    public float speed = 0.01f;
-    public float speed2 = 0.01f;
+    public float speed1 = 0.01f;
+    //public float speed2 = 0.01f;
+
+    public UI_MAinMenu2 pausaUI ;
+
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
+   
     void Update()
     {
+
+      
+
+
         Vector3 pos = transform.position;
 
         if (Input.GetKey(KeyCode.W))
         {
-            pos.y += speed;
+            pos.y += speed1* Time.deltaTime*1000;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            pos.y -= speed;
+            pos.y -= speed1 * Time.deltaTime*1000;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            pos.x -= speed2;
+            pos.x -= speed1*Time.deltaTime * 1000;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            pos.x += speed2;
+            pos.x += speed1*Time.deltaTime * 1000;
         }
 
+          
         transform.position = pos;
 
+
+     
         if (Input.GetKeyDown(KeyCode.Q))
         {
             transform.Rotate(new Vector3(0, 0, 10f));
@@ -62,5 +76,15 @@ public class Movement : MonoBehaviour
         }
 
     }
+    //private void OnDestroy()
+    //{
+        
+    //    if (pausaUI.pausa = true)
+    //    {
+    //        speed1 = 0f;
+    //        Debug.Log("Funicona");
+    //    }
+    //}
+    
 
 }
