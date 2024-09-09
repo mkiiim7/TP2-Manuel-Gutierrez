@@ -39,4 +39,6 @@ public class Movement2 : MonoBehaviour
         transform.position = pos;
     }
 
+   
+
 }

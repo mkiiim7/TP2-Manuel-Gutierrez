@@ -145,10 +145,20 @@ public class UI_MAinMenu2 : MonoBehaviour
     private void OnSpeedPlayer1Changed(float speed)
     {
         speed11.speed1 = speed ;
-    }
+
+        if (speed11.speed1 > 0.03f )
+        {
+            speed11.speed1 = 0.03f;
+        }
+}
 
     private void OnSpeedPlayer2Changed(float speed)
     {
         speed22.speed2 = speed;
+
+        if (speed22.speed2 > 0.03f)
+        {
+            speed22.speed2 = 0.03f;
+        }
     }
 }

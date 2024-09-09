@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 public class Movement : MonoBehaviour
 {
     private int score = 10;
@@ -53,27 +54,30 @@ public class Movement : MonoBehaviour
         transform.position = pos;
 
 
+        
+
+
      
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            transform.Rotate(new Vector3(0, 0, 10f));
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    
 
-        }
+        //}
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            transform.Rotate(new Vector3(0, 0, -10f));
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //   
 
-        }
+        //}
 
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            float red = Random.Range(0, 1.0f);
-            float green = Random.Range(0, 1.0f);
-            float blue = Random.Range(0, 1.0f);
-            spriteRenderer.color = new Color(red, green, blue) ;
+        //if (Input.GetKeyUp(KeyCode.E))
+        //{
+        //    float red = Random.Range(0, 1.0f);
+        //    float green = Random.Range(0, 1.0f);
+        //    float blue = Random.Range(0, 1.0f);
+        //    spriteRenderer.color = new Color(red, green, blue) ;
 
-        }
+        //}
 
     }
     //private void OnDestroy()
