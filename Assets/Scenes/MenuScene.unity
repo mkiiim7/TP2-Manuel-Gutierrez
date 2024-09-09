@@ -440,9 +440,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 961751785}
   m_HandleRect: {fileID: 189324587}
   m_Direction: 0
-  m_MinValue: 1
-  m_MaxValue: 10000
-  m_WholeNumbers: 1
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1580,7 +1580,7 @@ GameObject:
   - component: {fileID: 551123316}
   - component: {fileID: 551123315}
   m_Layer: 5
-  m_Name: Slider P21Color
+  m_Name: Slider P1Color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,9 +1666,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 461796772}
   m_HandleRect: {fileID: 1554105947}
   m_Direction: 0
-  m_MinValue: 1
-  m_MaxValue: 10000
-  m_WholeNumbers: 1
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2103,8 +2103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07009366bc918934296cd15987141bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider_altura: {fileID: 99707415}
-  _slider_color: {fileID: 71114157}
+  sliderAltura: {fileID: 99707415}
+  sliderColorRed: {fileID: 71114157}
 --- !u!1 &596430461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,11 +2701,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 709408399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0364b552e98606943b95a1e8b42c6915, type: 3}
+  m_Script: {fileID: 11500000, guid: 07009366bc918934296cd15987141bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider_altura: {fileID: 1401071491}
-  _slider_color: {fileID: 551123316}
+  sliderAltura: {fileID: 1401071491}
+  sliderColorRed: {fileID: 551123316}
 --- !u!1 &733161676
 GameObject:
   m_ObjectHideFlags: 0
