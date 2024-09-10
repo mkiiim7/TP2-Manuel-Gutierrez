@@ -1291,9 +1291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0
-
-'
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1795,6 +1793,7 @@ GameObject:
   - component: {fileID: 574031545}
   - component: {fileID: 574031544}
   - component: {fileID: 574031546}
+  - component: {fileID: 574031547}
   m_Layer: 0
   m_Name: Pared Der
   m_TagString: Untagged
@@ -1914,6 +1913,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &574031547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574031543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0f4b73ca83d5345bcc99d999de0e64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1Gol: 0
+  gameManager: {fileID: 965282263}
 --- !u!1 &576284694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,6 +2730,7 @@ GameObject:
   - component: {fileID: 733161678}
   - component: {fileID: 733161677}
   - component: {fileID: 733161679}
+  - component: {fileID: 733161680}
   m_Layer: 0
   m_Name: Pared Izq
   m_TagString: Untagged
@@ -2836,6 +2850,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &733161680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733161676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0f4b73ca83d5345bcc99d999de0e64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1Gol: 1
+  gameManager: {fileID: 965282263}
 --- !u!1 &789519615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,8 +3240,6 @@ MonoBehaviour:
   player2_gol: {fileID: 733161676}
   player1_Text: {fileID: 615223336}
   player2_Text: {fileID: 408018841}
-  player1_Score: 0
-  player2_Score: 0
 --- !u!4 &965282264
 Transform:
   m_ObjectHideFlags: 0
@@ -3226,8 +3252,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1743323086}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &984996157
@@ -4250,7 +4275,7 @@ GameObject:
   - component: {fileID: 1312311552}
   m_Layer: 0
   m_Name: Pelota
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5998,7 +6023,7 @@ RectTransform:
   m_Children:
   - {fileID: 615223335}
   - {fileID: 408018840}
-  m_Father: {fileID: 965282264}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7207,6 +7232,7 @@ RectTransform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1743323086}
   - {fileID: 1611623400}
   - {fileID: 1795665586}
   - {fileID: 536934967}

@@ -20,8 +20,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI player1_Text;
     public TextMeshProUGUI player2_Text;
 
-    public int player1_Score;
-    public int player2_Score;
+    private int player1_Score;
+    private int player2_Score;
 
 
     void Start()
