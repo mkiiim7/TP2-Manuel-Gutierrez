@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     private float life = 100;
     public float speed1 = 0.01f;
     //public float speed2 = 0.01f;
+    private Rigidbody2D rb;
 
     public UI_MAinMenu2 pausaUI ;
 
@@ -19,39 +20,34 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
    
     void Update()
     {
-
-      
-
-
-        Vector3 pos = transform.position;
+        
 
         if (Input.GetKey(KeyCode.W))
         {
-            pos.y += speed1* Time.deltaTime*1000;
+            rb.AddForce(Vector2.up * speed1 * Time.deltaTime * 1000);
+          
         }
-
         if (Input.GetKey(KeyCode.S))
         {
-            pos.y -= speed1 * Time.deltaTime*1000;
+            
+            rb.AddForce(new Vector2(0,-1) * speed1 * Time.deltaTime * 1000);  // new Vector2(0,-1) == Vector2.down
         }
-
         if (Input.GetKey(KeyCode.A))
         {
-            pos.x -= speed1*Time.deltaTime * 1000;
+            rb.AddForce(Vector2.left * speed1 * Time.deltaTime * 1000);
         }
-
         if (Input.GetKey(KeyCode.D))
         {
-            pos.x += speed1*Time.deltaTime * 1000;
+            rb.AddForce(Vector2.right * speed1 * Time.deltaTime * 1000);
         }
-
-          
-        transform.position = pos;
+         
+       
 
 
         

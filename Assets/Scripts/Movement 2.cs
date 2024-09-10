@@ -9,34 +9,43 @@ public class Movement2 : MonoBehaviour
     [SerializeField] private KeyCode keyDown = KeyCode.DownArrow;
     [SerializeField] private KeyCode keyLeft = KeyCode.LeftArrow;
     [SerializeField] private KeyCode keyRight = KeyCode.RightArrow;
-    //public float speed = 0.01f;
-    public float speed2 = 0.01f;
+    
 
+    //public float speed = 0.01f;
+    public float speed2 = 3f;
+
+    private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        
+        rb = GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
-        Vector3 pos = transform.position;
+       
 
         if (Input.GetKey(keyUp))
         {
-            pos.y += speed2 * Time.deltaTime * 1000;
+            rb.AddForce(Vector2.up * speed2 * Time.deltaTime * 1000);
         }
 
         if (Input.GetKey(keyDown))
         {
-            pos.y -= speed2 * Time.deltaTime * 1000;
+            rb.AddForce(new Vector2(0, -1) * speed2 * Time.deltaTime * 1000);  // new Vector2(0,-1) == Vector2.down
         }
 
         if (Input.GetKey(keyLeft))
         {
-            pos.x -= speed2 * Time.deltaTime * 1000;
+            rb.AddForce(Vector2.left * speed2 * Time.deltaTime * 1000);
         }
 
         if (Input.GetKey(keyRight))
         {
-            pos.x += speed2 * Time.deltaTime * 1000;
+            rb.AddForce(Vector2.right * speed2 * Time.deltaTime * 1000);
         }
 
-        transform.position = pos;
+        
     }
 
    
