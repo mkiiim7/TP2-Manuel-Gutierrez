@@ -5922,7 +5922,6 @@ MonoBehaviour:
   sliderspeedplayer1: {fileID: 1169661280}
   sliderspeedplayer2: {fileID: 1872979852}
   pausa: 0
-  speed11: {fileID: 0}
   speed22: {fileID: 576284695}
 --- !u!1 &1644365523
 GameObject:

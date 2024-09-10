@@ -27,7 +27,7 @@ public class UI_MAinMenu2 : MonoBehaviour
 
     [SerializeField] private GameObject PanelMainCredits;
 
-    [SerializeField] private Movement player1;
+    [SerializeField] private Movement2 player1;
 
     [SerializeField] private Movement2 player2;
 
@@ -38,7 +38,9 @@ public class UI_MAinMenu2 : MonoBehaviour
     public bool pausa = false;
 
     //public Movement speed11;
+
     public Movement2 speed22;
+    
 
     private void Awake()
     {
