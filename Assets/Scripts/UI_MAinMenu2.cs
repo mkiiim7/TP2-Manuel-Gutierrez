@@ -37,7 +37,7 @@ public class UI_MAinMenu2 : MonoBehaviour
 
     public bool pausa = false;
 
-    public Movement speed11;
+    //public Movement speed11;
     public Movement2 speed22;
 
     private void Awake()
@@ -142,23 +142,23 @@ public class UI_MAinMenu2 : MonoBehaviour
 
     }
     
-    private void OnSpeedPlayer1Changed(float speed)
+    private void OnSpeedPlayer1Changed(float speedP1)
     {
-        speed11.speed1 = speed ;
+        speed22.speed2 = speedP1 ;
 
-        if (speed11.speed1 > 0.03f )
+        if (speed22.speed2 > 10f )
         {
-            speed11.speed1 = 0.03f;
+            speed22.speed2 = 10f;
         }
 }
 
-    private void OnSpeedPlayer2Changed(float speed)
+    private void OnSpeedPlayer2Changed(float speedP2)
     {
-        speed22.speed2 = speed;
+        speed22.speed2 = speedP2;
 
-        if (speed22.speed2 > 0.03f)
+        if (speed22.speed2 > 10f)
         {
-            speed22.speed2 = 0.03f;
+            speed22.speed2 = 10f;
         }
     }
 }
