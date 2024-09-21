@@ -388,7 +388,6 @@ GameObject:
   m_Component:
   - component: {fileID: 71114158}
   - component: {fileID: 71114157}
-  - component: {fileID: 71114159}
   m_Layer: 5
   m_Name: Slider P2 Color
   m_TagString: Untagged
@@ -469,20 +468,6 @@ RectTransform:
   m_AnchoredPosition: {x: 188.4505, y: -816.0545}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &71114159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71114156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8eb248525e068649abc8a2a29e55f9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _slider: {fileID: 71114157}
-  _slider_Text: {fileID: 0}
 --- !u!1 &74903523
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +612,6 @@ GameObject:
   m_Component:
   - component: {fileID: 99707413}
   - component: {fileID: 99707415}
-  - component: {fileID: 99707414}
   m_Layer: 5
   m_Name: "Slider P2 Tama\xF1o"
   m_TagString: Untagged
@@ -657,20 +641,6 @@ RectTransform:
   m_AnchoredPosition: {x: 188.4505, y: -596.0545}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &99707414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99707412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8eb248525e068649abc8a2a29e55f9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _slider: {fileID: 99707415}
-  _slider_Text: {fileID: 0}
 --- !u!114 &99707415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1576,7 +1546,6 @@ GameObject:
   m_Component:
   - component: {fileID: 551123314}
   - component: {fileID: 551123316}
-  - component: {fileID: 551123315}
   m_Layer: 5
   m_Name: Slider P1Color
   m_TagString: Untagged
@@ -1606,20 +1575,6 @@ RectTransform:
   m_AnchoredPosition: {x: 188.4505, y: -706.0545}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &551123315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551123313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8eb248525e068649abc8a2a29e55f9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _slider: {fileID: 551123316}
-  _slider_Text: {fileID: 0}
 --- !u!114 &551123316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4810,7 +4765,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1401071489}
   - component: {fileID: 1401071491}
-  - component: {fileID: 1401071490}
   m_Layer: 5
   m_Name: "Slider P1 Tama\xF1o"
   m_TagString: Untagged
@@ -4840,20 +4794,6 @@ RectTransform:
   m_AnchoredPosition: {x: 188.4505, y: -486.0545}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1401071490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401071488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8eb248525e068649abc8a2a29e55f9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _slider: {fileID: 1401071491}
-  _slider_Text: {fileID: 0}
 --- !u!114 &1401071491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5917,12 +5857,11 @@ MonoBehaviour:
   pausePanelButtons: {fileID: 1571223775}
   PanelSettings: {fileID: 1345806685}
   PanelMainCredits: {fileID: 1146727882}
-  player1: {fileID: 0}
+  player1: {fileID: 709408406}
   player2: {fileID: 576284695}
   sliderspeedplayer1: {fileID: 1169661280}
   sliderspeedplayer2: {fileID: 1872979852}
   pausa: 0
-  speed22: {fileID: 576284695}
 --- !u!1 &1644365523
 GameObject:
   m_ObjectHideFlags: 0
