@@ -31,6 +31,8 @@ public class UI_MAinMenu2 : MonoBehaviour
 
     [SerializeField] private Movement2 player2;
 
+
+
     [SerializeField] private UnityEngine.UI.Slider sliderspeedplayer1;
 
     [SerializeField] private UnityEngine.UI.Slider sliderspeedplayer2;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement2 : MonoBehaviour
 {
-    private int score = 10;
+    //private int score = 10;
     [SerializeField] private KeyCode keyUp = KeyCode.UpArrow; 
     [SerializeField] private KeyCode keyDown = KeyCode.DownArrow;
     [SerializeField] private KeyCode keyLeft = KeyCode.LeftArrow;
